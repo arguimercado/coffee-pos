@@ -2,6 +2,7 @@ import CategoryTab from "@/app/(root)/(home)/_components/CategoryTab";
 import {products} from "@/data/product";
 import ProductCard from "@/components/ProductCard";
 import ProductList from "@/app/(root)/(home)/_components/ProductList";
+import OrderTab from "@/app/(root)/(home)/_components/OrderTab";
 
 
 interface SearchParams {
@@ -26,7 +27,8 @@ const Home = async ({searchParams}: SearchParams) => {
           <CategoryTab/>
           <ProductList category={category} />
         </div>
-        <div className="w-[250px]">
+        <div className="w-[450px]">
+          <OrderTab />
 
         </div>
       </div>

@@ -15,3 +15,12 @@ export const getProducts = query({
     return products;
   }
 })
+
+export const getProduct = query({
+  args: {
+    productId: v.id("products")
+  },
+  handler: async (ctx,{productId}) => {
+    return  await ctx.db.get(productId);
+  }
+})

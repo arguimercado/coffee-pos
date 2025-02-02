@@ -1,6 +1,7 @@
+import {Id} from "../../convex/_generated/dataModel";
 
 interface Product {
-  id: number;
+  _id: Id<"products">;
   title: string;
   description: string;
   price: number;

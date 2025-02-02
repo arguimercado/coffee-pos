@@ -10,6 +10,16 @@ export default defineSchema({
     price: v.number(),
     isActive: v.boolean(),
   }),
+  orders: defineTable({
+    userId: v.string(),
+    productId: v.string(),
+    quantity: v.number(),
+    price: v.number(),
+    orderDate: v.number()
+  })
+    .index("by_user_id", ["userId"])
+    .index("by_product_id", ["productId"]),
+
   users: defineTable({
     name: v.string(),
     email: v.string(),

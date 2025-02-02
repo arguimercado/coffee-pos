@@ -9,8 +9,8 @@ const RootLayout =  ({children} : {children: ReactNode}) => {
       <Navbar />
       <main className="flex">
         <Sidebar />
-        <section className="flex min-h-screen w-full flex-col px-6 lg:mr-[120px] pt-28 max-md:px-4 sm:px-4">
-          <div className="mx-auto w-full max-w-7xl">
+        <section className="flex min-h-screen w-full flex-col px-6  pt-28 max-md:px-4 sm:px-4">
+          <div className="mx-auto w-full ">
             {children}
           </div>
         </section>

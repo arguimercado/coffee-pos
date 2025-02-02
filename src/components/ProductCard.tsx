@@ -2,13 +2,20 @@
 import React from 'react'
 import {Card} from "@/components/ui/card";
 import Image from "next/image";
+import {Id} from "../../convex/_generated/dataModel";
+import {Product} from "@/types/model";
 
 interface ProductProps {
-  data: Product
+  data: Product,
+  onCardClick?: (id: Id<"products">) => void
 }
-const ProductCard = ({data}: ProductProps) => {
+const ProductCard = ({data,onCardClick}: ProductProps) => {
+
   return (
-    <Card className="flex w-full items-center flex-col px-4 py-4">
+    <Card
+        className="flex w-full items-center flex-col px-4 py-4 cursor-pointer"
+        onClick={() => onCardClick && onCardClick(data._id)}
+    >
       <Image
         src={`/images/${data.image}`}
         alt={data.title}
