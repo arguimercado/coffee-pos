@@ -1,5 +1,3 @@
-
-
 import CategoryTab from "@/app/(root)/(home)/_components/CategoryTab";
 import {products} from "@/data/product";
 import ProductCard from "@/components/ProductCard";
@@ -11,10 +9,10 @@ interface SearchParams {
 
 const Home = async ({searchParams}: SearchParams) => {
 
-  const { page, pageSize, query, category } = await searchParams;
+  const {page, pageSize, query, category} = await searchParams;
 
   const filterProducts = products.filter((product) => product.category === category);
-  console.log("filter",category);
+
 
   const handleCategorySelect = () => {
     console.log("Category Selected");
@@ -24,7 +22,7 @@ const Home = async ({searchParams}: SearchParams) => {
     <>
       <div className="w-full flex">
         <div className="flex-1 flex flex-col w-full gap-4">
-          <CategoryTab />
+          <CategoryTab/>
 
           <div
             className="w-full grid grid-cols-1

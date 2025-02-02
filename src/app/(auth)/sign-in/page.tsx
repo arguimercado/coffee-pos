@@ -1,5 +1,5 @@
 "use client";
-import UserAuth from "@/components/user-auth";
+import UserAuth from "@/components/forms/user-auth";
 import { SignInWithCredential } from "@/lib/actions/auth.action";
 import { SignInSchema } from "@/lib/validation";
 import React from "react";

@@ -1,4 +1,5 @@
 import React, { ReactNode } from 'react'
+import SocialAuth from "@/components/forms/social-auth";
 
 const AuthLayout = ({children} : {children: ReactNode}) => {
   return (
@@ -12,6 +13,7 @@ const AuthLayout = ({children} : {children: ReactNode}) => {
             </div>
          </div>
          {children}
+        <SocialAuth />
       </section>
     </main>
   )

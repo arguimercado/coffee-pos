@@ -3,9 +3,8 @@ import localFont from "next/font/local";
 import "./globals.css";
 import { ThemeProvider } from "../components/theme-provider";
 
-
-import { SessionProvider } from "next-auth/react";
-import { auth } from "@/auth";
+import {Toaster} from "@/components/ui/toaster";
+import {ClerkProvider} from "@clerk/nextjs";
 
 const inter = localFont({
    src: "./fonts/InterVF.ttf",
@@ -23,23 +22,25 @@ export default async function RootLayout({
 }: Readonly<{
    children: React.ReactNode;
 }>) {
-   const session = await auth();
 
-   return (
-      <html lang="en" suppressHydrationWarning>
-         <body className={`${inter.variable}  antialiased`}>
-            <SessionProvider session={session}>
-              <ThemeProvider
-                attribute={"class"}
-                defaultTheme="dark"
-                enableSystem
-                disableTransitionOnChange
-              >
-                {children}
-              </ThemeProvider>
-              </SessionProvider>
-        
-         </body>
-      </html>
-   );
+
+
+  return (
+    <html lang="en" suppressHydrationWarning>
+      <body className={`${inter.variable}  antialiased`}>
+        <ThemeProvider
+          attribute={"class"}
+          defaultTheme="dark"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <ClerkProvider>
+            {children}
+            <Toaster />
+          </ClerkProvider>
+        </ThemeProvider>
+      </body>
+
+    </html>
+  );
 }

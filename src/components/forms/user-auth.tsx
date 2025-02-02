@@ -3,8 +3,8 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { useRouter } from "next/navigation";
 import React from "react";
 import { DefaultValues, FieldValues, Path, SubmitHandler, useForm } from "react-hook-form";
-import { FormControl, FormField,Form, FormItem, FormLabel, FormMessage } from "./ui/form";
-import { Input } from "./ui/input";
+import { FormControl, FormField,Form, FormItem, FormLabel, FormMessage } from "../ui/form";
+import { Input } from "../ui/input";
 import { ConvertAuthLabel } from "@/lib/utils";
 import {z} from "zod";
 

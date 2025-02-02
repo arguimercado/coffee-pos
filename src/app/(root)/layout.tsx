@@ -1,8 +1,9 @@
-import React, { ReactNode } from 'react'
+import React, {ReactNode} from 'react'
 import Navbar from "@/app/(root)/_components/Navbar";
 import Sidebar from "@/app/(root)/_components/Sidebar";
 
-const RootLayout = ({children} : {children: ReactNode}) => {
+const RootLayout =  ({children} : {children: ReactNode}) => {
+
   return (
     <div className='background-light850_dark100 relative'>
       <Navbar />
