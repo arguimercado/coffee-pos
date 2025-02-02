@@ -9,6 +9,17 @@ export const addOrder = mutation({
     price: v.number(),
   },
   handler: async (ctx,{userId,productId,quantity,price}) => {
+
+    const productIdExist = await ctx.db.query("orders")
+            .filter((q) =>
+                q.eq(q.field("productId"),productId)).first();
+
+    if(productIdExist) {
+      const totalQuantity = productIdExist.quantity + quantity;
+      await ctx.db.patch(productIdExist._id,{quantity:totalQuantity});
+      return productIdExist;
+    }
+
     return await ctx.db.insert("orders",{
       userId,
       productId,
