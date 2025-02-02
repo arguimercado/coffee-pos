@@ -5,6 +5,8 @@ import { ThemeProvider } from "../components/theme-provider";
 
 import {Toaster} from "@/components/ui/toaster";
 import {ClerkProvider} from "@clerk/nextjs";
+import ConvexClientProvider from "@/components/convex-provider";
+import ConvexSyncUser from "@/components/convex-syncuser";
 
 const inter = localFont({
    src: "./fonts/InterVF.ttf",
@@ -28,6 +30,7 @@ export default async function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={`${inter.variable}  antialiased`}>
+      <ConvexClientProvider>
         <ThemeProvider
           attribute={"class"}
           defaultTheme="dark"
@@ -37,8 +40,10 @@ export default async function RootLayout({
           <ClerkProvider>
             {children}
             <Toaster />
+            <ConvexSyncUser />
           </ClerkProvider>
         </ThemeProvider>
+      </ConvexClientProvider>
       </body>
 
     </html>

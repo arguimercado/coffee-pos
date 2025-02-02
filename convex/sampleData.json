@@ -1,0 +1,190 @@
+[
+  {
+  "title": "Hazel Nut",
+  "description": "Hazel Nut Coffee",
+  "image": "sipup.png",
+  "category": "Coffee",
+  "price": 78.00,
+  "isActive": true
+  },
+  {
+
+  "title": "Ice Americano",
+  "description": "Ice Americano",
+  "image": "sipup.png",
+  "category": "Coffee",
+  "price": 68.00,
+  "isActive": true
+  },
+  {
+
+    "title": "French Vanilla",
+    "description": "French Vanilla Coffee",
+    "image": "sipup.png",
+    "category": "Coffee",
+    "price": 78.00,
+    "isActive": true
+  },
+  {
+
+    "title": "Caramel Macchiato",
+    "description": "Caramel Macchiato Coffee",
+    "image": "sipup.png",
+    "category": "Coffee",
+    "price": 78.00,
+    "isActive": true
+  },
+  {
+
+    "title": "Ice Latte",
+    "description": "Ice Latte Coffee",
+    "image": "sipup.png",
+    "category": "Coffee",
+    "price": 78.00,
+    "isActive": true
+  },
+  {
+
+    "title": "Espanol",
+    "description": "Espanol Coffee",
+    "image": "sipup.png",
+    "category": "Coffee",
+    "price": 78.00,
+    "isActive": true
+  },
+  {
+
+    "title": "Sipup Brew",
+    "description": "Sipup Brew Coffee",
+    "image": "sipup.png",
+    "category": "Coffee",
+    "price": 78.00,
+    "isActive": true
+  },
+  {
+
+      "title": "Cappuccino",
+      "description": "Cappuccino Coffee",
+      "image": "sipup.png",
+      "category": "Coffee",
+      "price": 78.00,
+      "isActive": true
+  },
+  {
+
+      "title": "Mocha",
+      "description": "Mocha Coffee",
+      "image": "sipup.png",
+      "category": "Coffee",
+      "price": 78.00,
+      "isActive": true
+  },
+  {
+
+      "title": "Cafe Latte",
+      "description": "Cafe Latte Coffee",
+      "image": "sipup.png",
+      "category": "Coffee",
+      "price": 78.00,
+      "isActive": true
+  },
+  {
+
+      "title": "Cafe Americano",
+      "description": "Cafe Americano Coffee",
+      "image": "sipup.png",
+      "category": "Coffee",
+      "price": 78.00,
+      "isActive": true
+  },
+  {
+
+      "title": "Cafe Mocha",
+      "description": "Cafe Mocha Coffee",
+      "image": "sipup.png",
+      "category": "Coffee",
+      "price": 78.00,
+      "isActive": true
+  },
+  {
+
+      "title": "Cafe Au Lait",
+      "description": "Cafe Au Lait Coffee",
+      "image": "sipup.png",
+      "category": "Coffee",
+      "price": 78.00,
+      "isActive": true
+  },
+  {
+
+      "title": "Cafe Macchiato",
+      "description": "Cafe Macchiato Coffee",
+      "image": "sipup.png",
+      "category": "Coffee",
+      "price": 78.00,
+      "isActive": true
+  },
+  {
+
+      "title": "Cafe Con Leche",
+      "description": "Cafe Con Leche Coffee",
+      "image": "sipup.png",
+      "category": "Coffee",
+      "price": 78.00,
+      "isActive": true
+  },
+  {
+
+      "title": "Cafe Cubano",
+      "description": "Cafe Cubano Coffee",
+      "image": "sipup.png",
+      "category": "Coffee",
+      "price": 78.00,
+      "isActive": true
+  },
+  {
+
+      "title": "Cafe Cortado",
+      "description": "Cafe Cortado Coffee",
+      "image": "sipup.png",
+      "category": "Coffee",
+      "price": 78.00,
+      "isActive": true
+  },
+  {
+
+      "title": "Cafe Breve",
+      "description": "Cafe Breve Coffee",
+      "image": "sipup.png",
+      "category": "Coffee",
+      "price": 78.00,
+      "isActive": true
+  },
+  {
+
+      "title": "Cafe Bombon",
+      "description": "Cafe Bombon Coffee",
+      "image": "sipup.png",
+      "category": "Coffee",
+      "price": 78.00,
+      "isActive": true
+  },
+  {
+
+      "title": "Cafe Au Lait",
+      "description": "Cafe Au Lait Coffee",
+      "image": "sipup.png",
+      "category": "Coffee",
+      "price": 78.00,
+      "isActive": true
+  },
+  {
+
+      "title": "Cafe Au Lait",
+      "description": "Cafe Au Lait Coffee",
+      "image": "sipup.png",
+      "category": "Coffee",
+      "price": 78.00,
+      "isActive": true
+  }
+]
