@@ -19,6 +19,16 @@ export const addOrder = mutation({
   }
 });
 
+
+export const removeOrder = mutation({
+  args: {
+    orderId: v.id("orders"),
+  },
+  handler: async (ctx,{orderId}) => {
+    return await ctx.db.delete(orderId);
+  }
+})
+
 export const getOrders = query({
   args: {},
   handler: async (ctx) => {

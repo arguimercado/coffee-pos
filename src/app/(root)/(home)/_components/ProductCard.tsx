@@ -2,11 +2,10 @@
 import React from 'react'
 import {Card} from "@/components/ui/card";
 import Image from "next/image";
-import {Id} from "../../convex/_generated/dataModel";
-import {Product} from "@/types/model";
+import {Doc, Id} from "../../../../../convex/_generated/dataModel";
 
 interface ProductProps {
-  data: Product,
+  data: Doc<"products">,
   onCardClick?: (id: Id<"products">) => void
 }
 const ProductCard = ({data,onCardClick}: ProductProps) => {

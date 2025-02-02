@@ -14,10 +14,11 @@ import {
 } from "@/components/ui/dialog"
 import { Label } from "@/components/ui/label"
 import {Id} from "../../../../../convex/_generated/dataModel";
-import {useQuery} from "convex/react";
+import {useMutation, useQuery} from "convex/react";
 import {api} from "../../../../../convex/_generated/api";
 import Image from "next/image";
 import Spinner from "@/components/spinner";
+import OrderButton from "@/app/(root)/(home)/_components/OrderButton";
 
 interface IProps {
   isOpen: boolean,
@@ -30,11 +31,10 @@ const OrderDialog = ({isOpen,onOpenChange,id} : IProps) => {
   const product = useQuery(api.product.getProduct, {productId: id});
 
 
-
   return (
     <Dialog open={isOpen} onOpenChange={onOpenChange}>
       <DialogContent>
-        <DialogTitle>What is you order</DialogTitle>
+        <DialogTitle>Order</DialogTitle>
         {!product ? <Spinner /> : (
            <div className="w-full flex flex-row gap-4">
              <Image
@@ -52,7 +52,7 @@ const OrderDialog = ({isOpen,onOpenChange,id} : IProps) => {
                  <span>{product.price}</span>
                </p>
                <div className="flex w-full justify-end">
-                 <Button variant={"theme"}>Order</Button>
+                 <OrderButton productId={product._id} price={product.price} onOrderSuccess={onOpenChange}/>
                </div>
              </div>
            </div>

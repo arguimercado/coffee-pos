@@ -3,7 +3,7 @@ import React from 'react'
 import {useQuery} from "convex/react";
 import {api} from "../../../../../convex/_generated/api";
 import Spinner from "@/components/spinner";
-import ProductCard from "@/components/ProductCard";
+import ProductCard from "@/app/(root)/(home)/_components/ProductCard";
 import {Id} from "../../../../../convex/_generated/dataModel";
 import OrderDialog from "@/app/(root)/(home)/_components/OrderDialog";
 
