@@ -46,10 +46,7 @@ const OrderTab = () => {
           <span className="text-primary-500 font-bold text-2xl">{sumOfOrderAmount}</span>
         </div>
         {orders && orders.length > 0 && (
-          <div className="flex-between gap-3">
-           <PaymentDialog />
-
-          </div>
+          <PaymentDialog />
         )}
       </div>
     </div>
