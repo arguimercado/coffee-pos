@@ -29,7 +29,6 @@ const Home = async ({searchParams}: SearchParams) => {
         </div>
         <div className="w-[450px]">
           <OrderTab />
-
         </div>
       </div>
     </>

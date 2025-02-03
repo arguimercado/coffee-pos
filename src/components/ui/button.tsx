@@ -9,7 +9,7 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        theme: "background-dark400_light900 text-dark200_light800",
+        theme: "bg-primary-500 text-dark200_light800",
 
         default:
           "bg-slate-900 text-slate-50 shadow hover:bg-slate-900/90 dark:bg-slate-50 dark:text-slate-900 dark:hover:bg-slate-50/90",

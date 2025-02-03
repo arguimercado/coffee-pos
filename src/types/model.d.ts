@@ -10,3 +10,10 @@ interface Product {
   _creationTime: number;
   isActive: boolean;
 }
+
+interface Payment {
+  customerName: string;
+  paymentType: "cash" | "credit",
+  totalPurchase: number;
+  amount: number;
+}

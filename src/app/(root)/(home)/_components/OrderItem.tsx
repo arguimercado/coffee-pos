@@ -35,9 +35,9 @@ const OrderItem = ({order} : IProps) => {
           />
           <p>{product.title}</p>
         </div>
-        <div className="flex flex-col">
-          <p>Quantity: {order.quantity}</p>
-          <p>Price: {totalAmount}</p>
+        <div className="flex flex-col items-end gap-2">
+          <p>x {order.quantity}</p>
+          <p>PHP {totalAmount}</p>
         </div>
         <RemoveOrder orderId={ order._id as Id<"orders"> } />
       </div>
